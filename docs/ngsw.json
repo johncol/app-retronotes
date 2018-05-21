@@ -1,0 +1,73 @@
+{
+  "configVersion": 1,
+  "index": "/retronotes/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/retronotes/favicon.ico",
+        "/retronotes/index.html",
+        "/retronotes/main.121267734f97a4d0aea7.js",
+        "/retronotes/polyfills.b4daf421c94934f530d4.js",
+        "/retronotes/runtime.a66f828dca56eeb90e02.js",
+        "/retronotes/styles.9f6a7bd034fadf9d93bd.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/retronotes/assets/icons/icon_128x128.png",
+        "/retronotes/assets/icons/icon_256x256.png",
+        "/retronotes/assets/icons/icon_48x48.png",
+        "/retronotes/assets/icons/icon_512x512.png"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "fonts",
+      "installMode": "lazy",
+      "updateMode": "lazy",
+      "urls": [],
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/.*",
+        "https:\\/\\/use\\.fontawesome\\.com\\/releases\\/v5\\.0\\.13\\/css\\/all\\.css"
+      ]
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/retronotes/assets/icons/icon_128x128.png": "320831c3716d6824a0d76b531b9cf7dac060eb2a",
+    "/retronotes/assets/icons/icon_256x256.png": "f4f0976091297364b5b69eff78b09bf7548f9cd0",
+    "/retronotes/assets/icons/icon_48x48.png": "e85fd8a10d30bc82bf7e3555ec6ade7e0deb71f1",
+    "/retronotes/assets/icons/icon_512x512.png": "250029553e8d41a5cbc1277f8a289a57908df19a",
+    "/retronotes/favicon.ico": "b24269124366f1c77211c9b45d63389d21c0c6f2",
+    "/retronotes/index.html": "7ad14dc191b98a905cb9676dac42f481f6c27638",
+    "/retronotes/main.121267734f97a4d0aea7.js": "a452c0109379fac6414904c4f45554d53eb4827a",
+    "/retronotes/polyfills.b4daf421c94934f530d4.js": "193f6d7b77c2bce633da2f543082303b4f32d7ed",
+    "/retronotes/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/retronotes/styles.9f6a7bd034fadf9d93bd.css": "545962ab5c48e4f469e80f8d8fd5ed516a81926a"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}
