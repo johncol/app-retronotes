@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { StorageServiceModule } from 'angular-webstorage-service';
+
+import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardModule } from './dashboard/dashboard.module';
@@ -19,7 +22,8 @@ import { NewNoteFormComponent } from './new-note/components/new-note-form/new-no
     AppRoutingModule,
     DashboardModule,
     NewNoteModule,
-    StorageServiceModule
+    StorageServiceModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   declarations: [
     AppComponent,
