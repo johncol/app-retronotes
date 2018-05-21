@@ -1,0 +1,25 @@
+<mat-toolbar>
+  <h1>Add a note</h1>
+</mat-toolbar>
+
+<form [formGroup]="form" class="new-note-form" autocomplete="off" novalidate (ngSubmit)="submit()">
+
+  <mat-form-field>
+    <input matInput placeholder="Title" formControlName="title">
+    <mat-error *ngIf="form.get('title').invalid">Required</mat-error>
+  </mat-form-field>
+  
+  <mat-form-field>
+    <textarea matInput placeholder="Description" formControlName="description"></textarea>
+    <mat-error *ngIf="form.get('description').invalid">Required</mat-error>
+  </mat-form-field>
+  
+  <mat-radio-group class="radio-group" formControlName="type">
+    <mat-radio-button *ngFor="let type of types" [value]="type">
+      {{ type.type }}
+    </mat-radio-button>
+  </mat-radio-group>
+
+  <button type="submit" mat-raised-button color="accent">Done</button>
+
+</form>

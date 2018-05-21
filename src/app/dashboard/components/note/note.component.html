@@ -1,0 +1,23 @@
+<mat-card class="card" [ngClass]="cardClassList()" (click)="toggleExpanded()">
+  
+  <button mat-button
+    class="card__check card__check--corner"
+    [ngClass]="{ 'card__check--visible': expanded }"
+    (click)="removeNote($event)">
+      <i class="fas fa-check"></i>
+  </button>
+  <section class="card__icon">
+    <i class="far"
+      [class.fa-smile]="note.type.isHappy()"
+      [class.fa-frown]="note.type.isUnhappy()">
+    </i>
+  </section>
+  <section class="card__content">
+    <mat-card-title class="card__title">
+      {{ note.title }}
+    </mat-card-title>
+    <mat-card-content class="card__description">
+      {{ note.description }}
+    </mat-card-content>
+  </section>
+</mat-card>

@@ -1,0 +1,15 @@
+.toolbar {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3fc6c3;
+
+  &__button {
+    &--add {
+      background: transparent;
+      color: inherit;
+      padding: 0 1.5rem;
+      min-width: auto;
+    }
+  }
+}

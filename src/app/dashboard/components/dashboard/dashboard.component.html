@@ -1,0 +1,3 @@
+<app-toolbar [items]="notes?.length"></app-toolbar>
+<app-notes-list [notes]="notes"></app-notes-list>
+<app-zero-notes *ngIf="notes != null && notes?.length === 0"></app-zero-notes>

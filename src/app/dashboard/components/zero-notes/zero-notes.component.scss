@@ -1,0 +1,17 @@
+.zero-notes {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 3rem 0.5rem;
+  text-align: center;
+  color: #c3c3c3;
+  
+  &__title {
+    margin-top: 3rem;
+    font-size: 4rem;
+  }
+
+  &__icon {
+    margin-top: 3rem;
+    font-size: 10rem;
+  }
+}

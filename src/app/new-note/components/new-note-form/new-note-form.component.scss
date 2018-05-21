@@ -1,0 +1,12 @@
+.new-note-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+
+  .radio-group {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem 3rem;
+  }
+}

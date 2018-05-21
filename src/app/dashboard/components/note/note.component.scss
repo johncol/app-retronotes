@@ -1,0 +1,97 @@
+$color-white: #ffffff;
+$transition: all 0.5s ease-out;
+$check-position: 1.5rem;
+
+.mat-card.card {
+  box-shadow: inset 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);
+  color: $color-white;
+  border-radius: 0;
+  padding: 2rem 3rem 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  transition: $transition;
+
+  .card__check {
+    opacity: 0;
+    background: transparent;
+    color: inherit;
+    padding: 0 1.5rem;
+    min-width: auto;
+
+    &--corner {
+      position: absolute;
+      top: $check-position;
+      right: $check-position;
+      transition: $transition;
+    }
+  }
+
+  .card__icon {
+    font-size: 5rem;
+    text-align: center;
+    color: rgba(256, 256, 256, 0.9);
+    width: 7rem;
+    transition: $transition;
+  }
+
+  .card__content {
+    width: calc(100vw - 14rem);
+    transition: $transition;
+    
+    .card__title {
+      font-size: 1.9rem;
+      margin-bottom: 0.2rem;
+      transition: $transition;
+    }
+    
+    .card__description {
+      margin-bottom: 0;
+      font-size: 1.4rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: $transition;
+    }
+  }
+}
+
+.mat-card.card--expanded {
+  flex-wrap: wrap;
+
+  .card__check--visible {
+    opacity: 1;
+  }
+  
+  .card__icon {
+    font-size: 10rem;
+    width: 100vw;
+  }
+
+  .card__content {
+    width: 100vw;
+
+    .card__title {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .card__description {
+      white-space: initial;
+      overflow: auto;
+      text-overflow: initial;
+    }
+  }
+}
+
+.card.mat-card {
+  &.card--gradient {
+    &-0 { background: linear-gradient(to bottom, #4393c8, #4d97cd); }
+    &-1 { background: linear-gradient(to bottom, #4970a7, #446c9e); }
+    &-2 { background: linear-gradient(to bottom, #594f8c, #564f82); }
+    &-3 { background: linear-gradient(to bottom, #583f6b, #503f64); }
+    &-4 { background: linear-gradient(to bottom, #7a2828, #a73737); }
+  }
+}
